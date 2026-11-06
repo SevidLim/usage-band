@@ -1,0 +1,7 @@
+{
+  "name": "usage-band",
+  "owner": { "name": "SevidLim" },
+  "plugins": [
+    { "name": "usage-band", "source": "./", "description": "Shows this session's context usage above the prompt and tells the model when it passes 600k tokens." }
+  ]
+}
