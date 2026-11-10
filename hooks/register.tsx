@@ -18,6 +18,12 @@ export const register: Register = on => {
     return next({ ...e, text: e.text + note })
   })
 
+  // 焦點離開用量列（點對話或 mod 以外的地方）時收合
+  on('ui.focus', { component: 'AbovePrompt' }, async ($, e, next) => {
+    if (e.element === undefined) await update($, isOpen, () => false).catch(() => undefined)
+    return next(e)
+  })
+
   on('ui.render', { component: 'AbovePrompt' }, async ($, e, next) => {
     if (e.props.hasSurvey) return next(e)
     const { Box, Button, Text } = $.ui.resolve(e)

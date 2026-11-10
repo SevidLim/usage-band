@@ -1,1 +1,1 @@
-{ "name": "usage-band", "version": "0.1.0", "description": "Shows this session's context usage above the prompt and tells the model when it passes 600k tokens.", "types": "./types/index.d.ts", "license": "MIT", "author": { "name": "SevidLim" } }
+{ "name": "usage-band", "version": "0.1.1", "description": "Shows this session's context usage above the prompt and tells the model when it passes 600k tokens.", "types": "./types/index.d.ts", "license": "MIT", "author": { "name": "SevidLim" } }
